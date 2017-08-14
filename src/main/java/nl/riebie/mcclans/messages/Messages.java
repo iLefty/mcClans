@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017 riebie, Kippers <https://bitbucket.org/Kippers/mcclans-core-sponge>
+ * Copyright (c) 2016 riebie, Kippers <https://bitbucket.org/Kippers/mcclans-core-sponge>
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -36,38 +36,38 @@ import org.spongepowered.api.text.format.TextColors;
  */
 public class Messages {
 
-    public static final String FOR_ALL_COMMANDS_TYPE_CLAN_HELP = "For all commands type /clan help";
-    public static final String CLAN_TAG_EXISTS_ALREADY = "Clan tag exists already";
-    public static final String CLAN_TAG_BLOCKED = "This clan tag is blacklisted. Please try another";
-    public static final String CLAN_NAME_BLOCKED = "This clan name is blacklisted. Please try another";
-    public static final String YOU_ARE_ALREADY_IN_A_CLAN = "You are already in a clan";
-    public static final String CLAN_DOES_NOT_EXIST = "Clan does not exist";
-    public static final String YOU_ARE_NOT_IN_A_CLAN = "You are not in a clan";
-    public static final String RANK_DOES_NOT_EXIST = "Rank does not exist";
-    public static final String RANK_IS_NOT_CHANGEABLE = "Rank is not changeable";
-    public static final String PLAYER_DOES_NOT_EXIST = "Player does not exist";
+    public static final String FOR_ALL_COMMANDS_TYPE_CLAN_HELP = "Для получения списка команд, напишите /clan help";
+    public static final String CLAN_TAG_EXISTS_ALREADY = "Тэг клана уже присутствует";
+    public static final String CLAN_TAG_BLOCKED = "Этот тэг запрещён. Выберите другой";
+    public static final String CLAN_NAME_BLOCKED = "Такое название запрещено. Выберите другое";
+    public static final String YOU_ARE_ALREADY_IN_A_CLAN = "Вы уже в клане";
+    public static final String CLAN_DOES_NOT_EXIST = "Клан не существует";
+    public static final String YOU_ARE_NOT_IN_A_CLAN = "Вы не в клане";
+    public static final String RANK_DOES_NOT_EXIST = "Ранг не существует";
+    public static final String RANK_IS_NOT_CHANGEABLE = "Ранг нельзя изменить";
+    public static final String PLAYER_DOES_NOT_EXIST = "Игрок не существует";
     public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "You cannot resign from the clan as the Owner. Transfer your rank to another clan member before resigning";
     public static final String YOU_CANNOT_OVERWRITE_THE_OWNER_RANK = "You cannot overwrite the Owner rank. The Owner needs to transfer his rank to another clan member first";
     public static final String ONLY_THE_OWNER_CAN_CHANGE_OWNER = "Only the owner can change the owner of the clan";
 
-    public static final String NO_PENDING_CLAN_INVITE = "You have no pending clan invite";
-    public static final String CLAN_INVITE_ACCEPTED = "Clan invite accepted";
-    public static final String CLAN_INVITE_DECLINED = "Clan invite declined";
-    public static final String NO_PENDING_ALLY_INVITE = "You have no pending ally invite";
-    public static final String ALLY_INVITE_ACCEPTED = "Ally invite accepted";
-    public static final String ALLY_INVITE_DECLINED = "Ally invite declined";
+    public static final String NO_PENDING_CLAN_INVITE = "У вас нет приглашений";
+    public static final String CLAN_INVITE_ACCEPTED = "Приглашение в клан принято";
+    public static final String CLAN_INVITE_DECLINED = "Приглашение в клан отклонено";
+    public static final String NO_PENDING_ALLY_INVITE = "Нет союзных предложений";
+    public static final String ALLY_INVITE_ACCEPTED = "Союз принят";
+    public static final String ALLY_INVITE_DECLINED = "Союз отклонён";
     public static final String YOU_CANNOT_REMOVE_THE_OWNER_FROM_THE_CLAN = "You cannot remove the owner from the clan";
     public static final String THIS_CLAN_IS_NOT_ACCEPTING_ALLY_INVITES = "This clan is not accepting ally invites";
-    public static final String YOUR_CLANS_ARE_ALREADY_ALLIES = "Your clans are already allies";
+    public static final String YOUR_CLANS_ARE_ALREADY_ALLIES = "Ваши кланы уже в союзе";
     public static final String THIS_CLAN_IS_NOT_AN_ALLY = "This clan is not an ally";
     public static final String YOU_CANNOT_BECOME_ALLIES_WITH_YOUR_OWN_CLAN = "You cannot become allies with.. your own.. clan.. wat";
     public static final String THIS_IS_NOT_A_VALID_COLOR = "This is not a valid color";
     public static final String YOUR_CLAN_NO_LONGER_ACCEPTS_ALLY_INVITES = "Your clan no longer accepts ally invites";
     public static final String YOUR_CLAN_NOW_ACCEPTS_ALLY_INVITES = "Your clan now accepts ally invites";
-    public static final String CLAN_HOME_LOCATION_SET = "Clan home location set";
-    public static final String CLAN_HOME_LOCATION_IS_NOT_SET = "Clan home location is not set";
+    public static final String CLAN_HOME_LOCATION_SET = "Установлена точка дома для клана";
+    public static final String CLAN_HOME_LOCATION_IS_NOT_SET = "Точка дома для клана, не установлена";
     public static final String NO_TABLE_TO_BROWSE = "You must execute a pageable command first";
-    public static final String TELEPORT_CANCELLED = "Teleport cancelled";
+    public static final String TELEPORT_CANCELLED = "Телепорт отменён";
     public static final String YOU_NEED_TO_MOVE_BEFORE_ATTEMPTING_ANOTHER_TELEPORT = "You need to move before attempting another teleport";
     public static final String PLAYER_PROPERTIES_REMOVED = "Player properties removed";
     public static final String THESE_ARE_THE_SAME_PLAYERS = "These are the same players";
