@@ -188,7 +188,7 @@ public class ClanCommands {
         table.draw(clans, page, commandSource);
     }
 
-    @Command(name = "invite", description = "Invite a player to your clan", isPlayerOnly = true, isClanOnly = true, clanPermission = "invite", spongePermission = "mcclans.user.invite")
+    @Command(name = "invite", description = "Пригласить игрока в свой клан", isPlayerOnly = true, isClanOnly = true, clanPermission = "invite", spongePermission = "mcclans.user.invite")
     public void clanInviteCommand(Player player, ClanPlayerImpl clanPlayer, @Parameter(name = "playerName") String playerName) {
         // TODO SPONGE: Check if command is properly and fully implemented
         ClanImpl clan = clanPlayer.getClan();

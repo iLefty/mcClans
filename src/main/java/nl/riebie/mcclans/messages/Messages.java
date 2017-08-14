@@ -175,9 +175,9 @@ public class Messages {
 
     public static void sendClanBroadcastMessagePlayerJoinedTheClan(ClanImpl clan, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" joined the clan").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" присоединился к клану").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(message);
     }
