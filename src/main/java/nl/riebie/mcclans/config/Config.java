@@ -131,10 +131,10 @@ public class Config {
                 ConfigOption.builder(REMOVE_INACTIVE_CLAN_PLAYERS_AFTER_DAYS, 60).addMinimumNumberConstraint(0).build(),
                 ConfigOption.builder(REMOVE_INACTIVE_CLAN_OWNERS_INCLUDING_CLAN, false).build(),
 
-                ConfigOption.builder(CLAN_TAG_REGEX, "[A-Za-z0-9_]+").build(),
+                ConfigOption.builder(CLAN_TAG_REGEX, "[А-Яа-яA-Za-z0-9_]+").build(),
                 ConfigOption.builder(CLAN_TAG_CHARACTERS_MINIMUM, 2).addMinimumNumberConstraint(1).build(),
                 ConfigOption.builder(CLAN_TAG_CHARACTERS_MAXIMUM, 6).addMinimumNumberConstraint(1).build(),
-                ConfigOption.builder(CLAN_NAME_REGEX, "[A-Za-z0-9_]+").build(),
+                ConfigOption.builder(CLAN_NAME_REGEX, "[А-Яа-яA-Za-z0-9_]+").build(),
                 ConfigOption.builder(CLAN_NAME_CHARACTERS_MINIMUM, 2).addMinimumNumberConstraint(1).build(),
                 ConfigOption.builder(CLAN_NAME_CHARACTERS_MAXIMUM, 30).addMinimumNumberConstraint(1).build()
         ).build();
