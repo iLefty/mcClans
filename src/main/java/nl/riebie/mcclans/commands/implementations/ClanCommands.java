@@ -118,7 +118,7 @@ public class ClanCommands {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
-    @Command(name = "create", description = "Create a clan", isPlayerOnly = true, spongePermission = "mcclans.user.create")
+    @Command(name = "create", description = "Создать клан", isPlayerOnly = true, spongePermission = "mcclans.user.create")
     public void clanCreateCommand(
             CommandSource commandSource,
             ClanPlayerImpl clanPlayer,
@@ -161,7 +161,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "list", description = "Lists all the clans", spongePermission = "mcclans.user.list")
+    @Command(name = "list", description = "Список всех кланов", spongePermission = "mcclans.user.list")
     public void clanListCommand(CommandSource commandSource, @PageParameter int page) {
         List<ClanImpl> clans = ClansImpl.getInstance().getClanImpls();
 
@@ -225,7 +225,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "disband", description = "Disband a clan", isPlayerOnly = true, isClanOnly = true, clanPermission = "disband", spongePermission = "mcclans.user.disband")
+    @Command(name = "disband", description = "Распустить клан", isPlayerOnly = true, isClanOnly = true, clanPermission = "disband", spongePermission = "mcclans.user.disband")
     public void clanDisbandCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanImpl clan = clanPlayer.getClan();
         ClanDisbandEvent.User event = EventDispatcher.getInstance().dispatchUserClanDisbandEvent(clan);
@@ -238,7 +238,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "remove", description = "Remove a player from your clan", isPlayerOnly = true, isClanOnly = true, clanPermission = "remove", spongePermission = "mcclans.user.remove")
+    @Command(name = "remove", description = "Изгнать игрока из клана", isPlayerOnly = true, isClanOnly = true, clanPermission = "remove", spongePermission = "mcclans.user.remove")
     public void clanRemoveCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "playerName") String removeName) {
         ClanImpl clan = clanPlayer.getClan();
         ClanPlayerImpl toBeRemovedClanPlayer = ClansImpl.getInstance().getClanPlayer(removeName);
@@ -264,7 +264,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "accept", description = "Accept a pending clan invite", isPlayerOnly = true, spongePermission = "mcclans.user.accept")
+    @Command(name = "accept", description = "Принять приглашение в клан", isPlayerOnly = true, spongePermission = "mcclans.user.accept")
     public void clanAcceptCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanInvite clanInvite = clanPlayer.getClanInvite();
         if (clanInvite == null) {
@@ -275,7 +275,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "decline", description = "Decline a pending clan invite", isPlayerOnly = true, spongePermission = "mcclans.user.decline")
+    @Command(name = "decline", description = "Отклонить приглашение в клан", isPlayerOnly = true, spongePermission = "mcclans.user.decline")
     public void clanDeclineCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanInvite clanInvite = clanPlayer.getClanInvite();
         if (clanInvite == null) {
@@ -286,7 +286,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "roster", description = "See the members of a clan", spongePermission = "mcclans.user.roster")
+    @Command(name = "roster", description = "Список участников клана", spongePermission = "mcclans.user.roster")
     public void clanRosterCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "clanTag") Optional<ClanImpl> clanOpt,
                                   @PageParameter int page) {
         ClanImpl clan;
@@ -336,7 +336,7 @@ public class ClanCommands {
         table.draw(members, page, commandSource);
     }
 
-    @Command(name = "leaderboard", description = "Lists all players sorted by KDR", spongePermission = "mcclans.user.leaderboard")
+    @Command(name = "leaderboard", description = "Сортировать участников по KDR", spongePermission = "mcclans.user.leaderboard")
     public void clanLeaderboardCommand(CommandSource commandSource, @PageParameter int page) {
         List<ClanPlayerImpl> clanPlayers = ClansImpl.getInstance().getClanPlayerImpls();
 
@@ -367,7 +367,7 @@ public class ClanCommands {
         table.draw(clanPlayers, page, commandSource);
     }
 
-    @Command(name = "info", description = "Get the info of a clan", spongePermission = "mcclans.user.info")
+    @Command(name = "info", description = "Получить информацию о клане", spongePermission = "mcclans.user.info")
     public void clanInfoCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "clanTag") Optional<ClanImpl> clanOpt) {
         if (clanOpt.isPresent()) {
             ClanImpl clan = clanOpt.get();
@@ -437,7 +437,7 @@ public class ClanCommands {
         }
     }
 
-    @Command(name = "coords", description = "See the coordinates of your clan members", isPlayerOnly = true, isClanOnly = true, clanPermission = "coords", spongePermission = "mcclans.user.coords")
+    @Command(name = "coords", description = "Посмотреть координаты ваших соклановцев", isPlayerOnly = true, isClanOnly = true, clanPermission = "coords", spongePermission = "mcclans.user.coords")
     public void clanCoordsCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @PageParameter int page) {
         ClanImpl clan = clanPlayer.getClan();
         List<Player> onlineMembers = new ArrayList<Player>();
@@ -464,7 +464,7 @@ public class ClanCommands {
         table.draw(onlineMembers, page, commandSource);
     }
 
-    @Command(name = "stats", description = "See the statistics of a clan's members", spongePermission = "mcclans.user.stats")
+    @Command(name = "stats", description = "Статистика участников клана", spongePermission = "mcclans.user.stats")
     public void clanStatsCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer,
                                  @Parameter(name = "clanTag") Optional<ClanImpl> clanOpt, @PageParameter int page) {
         ClanImpl clan;
@@ -508,7 +508,7 @@ public class ClanCommands {
         table.draw(members, page, commandSource);
     }
 
-    @Command(name = "home", description = "Teleport to your clan home", isPlayerOnly = true, isClanOnly = true, clanPermission = "home", spongePermission = "mcclans.user.home")
+    @Command(name = "home", description = "Телепортироваться в дом клана", isPlayerOnly = true, isClanOnly = true, clanPermission = "home", spongePermission = "mcclans.user.home")
     public void clanHomeCommand(Player player, ClanPlayerImpl clanPlayer) {
         ClanImpl clan = clanPlayer.getClan();
         Location<World> teleportLocation = clan.getHome();
@@ -546,7 +546,7 @@ public class ClanCommands {
         ).submit(MCClans.getPlugin());
     }
 
-    @Command(name = "sethome", description = "Set the location of your clan home", isPlayerOnly = true, isClanOnly = true, clanPermission = "sethome", spongePermission = "mcclans.user.sethome")
+    @Command(name = "sethome", description = "Узнать локацию кланового дома", isPlayerOnly = true, isClanOnly = true, clanPermission = "sethome", spongePermission = "mcclans.user.sethome")
     public void clanSetHomeCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         Player player = (Player) commandSource;
         ClanImpl clan = clanPlayer.getClan();
@@ -583,7 +583,7 @@ public class ClanCommands {
 
     // TODO command can use ClanPlayer (or rather Clan) info, but should also partly function for console (with less data displayd)
     // TODO allow clanPlayer to be optional mayhaps?
-    @Command(name = "price", description = "See all the costs associated with clans", isPlayerOnly = true, spongePermission = "mcclans.user.price")
+    @Command(name = "price", description = "Цены связанные с кланами", isPlayerOnly = true, spongePermission = "mcclans.user.price")
     public void clanPriceCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanImpl clan = clanPlayer.getClan();
 
@@ -611,9 +611,9 @@ public class ClanCommands {
         }
 
         VerticalTable table = new VerticalTable(" Clan price info", 0);
-        table.setValue("Clan creation", clanCreationText);
-        table.setValue("Teleport to clan home", teleportToClanHomeText);
-        table.setValue("Set clan home", setHomeText);
+        table.setValue("Создать клан", clanCreationText);
+        table.setValue("Телепортироваться в точку дома", teleportToClanHomeText);
+        table.setValue("Установить точку дома", setHomeText);
 
         table.draw(commandSource, 0);
     }
