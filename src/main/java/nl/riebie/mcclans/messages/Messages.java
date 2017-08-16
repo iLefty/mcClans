@@ -46,7 +46,7 @@ public class Messages {
     public static final String RANK_DOES_NOT_EXIST = "Ранг не существует";
     public static final String RANK_IS_NOT_CHANGEABLE = "Ранг нельзя изменить";
     public static final String PLAYER_DOES_NOT_EXIST = "Игрок не существует";
-    public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "You cannot resign from the clan as the Owner. Transfer your rank to another clan member before resigning";
+    public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "Вы не можете покинуть клан пока вы его глава. Отдайте своё звание другому игроку";
     public static final String YOU_CANNOT_OVERWRITE_THE_OWNER_RANK = "You cannot overwrite the Owner rank. The Owner needs to transfer his rank to another clan member first";
     public static final String ONLY_THE_OWNER_CAN_CHANGE_OWNER = "Это доступно только главе клана";
 
