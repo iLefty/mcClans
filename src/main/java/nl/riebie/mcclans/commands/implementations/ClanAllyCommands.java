@@ -35,7 +35,7 @@ import org.spongepowered.api.command.CommandSource;
  */
 public class ClanAllyCommands {
 
-    @Command(name = "accept", description = "Accept a pending ally invite", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.accept")
+    @Command(name = "accept", description = "Принять заявку на альянс", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.accept")
     public void allyAcceptCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanImpl invitedClan = clanPlayer.getClan();
         ClanImpl invitingClan = invitedClan.getInvitingAlly();
@@ -51,7 +51,7 @@ public class ClanAllyCommands {
         }
     }
 
-    @Command(name = "decline", description = "Decline a pending ally invite", isPlayerOnly = true, isClanOnly = true, clanPermission =  "ally", spongePermission = "mcclans.user.ally.decline")
+    @Command(name = "decline", description = "Отклонить заявку на альянс", isPlayerOnly = true, isClanOnly = true, clanPermission =  "ally", spongePermission = "mcclans.user.ally.decline")
     public void allyDeclineCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         ClanImpl invitedClan = clanPlayer.getClan();
         ClanImpl invitingClan = invitedClan.getInvitingAlly();
@@ -66,7 +66,7 @@ public class ClanAllyCommands {
         }
     }
 
-    @Command(name = "invite", description = "Invite another clan to become an ally", isPlayerOnly = true, isClanOnly = true, clanPermission =  "ally", spongePermission = "mcclans.user.ally.invite")
+    @Command(name = "invite", description = "Пригласить другой клан в альянс", isPlayerOnly = true, isClanOnly = true, clanPermission =  "ally", spongePermission = "mcclans.user.ally.invite")
     public void allyInviteCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "clanTag") ClanImpl invitedClan) {
         ClanImpl invitingClan = clanPlayer.getClan();
         if (invitingClan.equals(invitedClan)) {
@@ -87,7 +87,7 @@ public class ClanAllyCommands {
         }
     }
 
-    @Command(name = "inviteable", description = "Change if the clan is accepting ally invites", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.inviteable")
+    @Command(name = "inviteable", description = "Принимает ли клан заявки на альянс", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.inviteable")
     public void allyInviteableCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "toggle") Toggle toggle) {
         ClanImpl clan = clanPlayer.getClan();
 
@@ -101,7 +101,7 @@ public class ClanAllyCommands {
         }
     }
 
-    @Command(name = "remove", description = "Remove an allied clan", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.remove")
+    @Command(name = "remove", description = "Расторгнуть альянс", isPlayerOnly = true, isClanOnly = true, clanPermission = "ally", spongePermission = "mcclans.user.ally.remove")
     public void allyRemoveCommand(ClanPlayerImpl clanPlayer, @Parameter(name = "clanTag") ClanImpl ally) {
         ClanImpl clan = clanPlayer.getClan();
         if(clan.isClanAllyOfThisClan(ally)){

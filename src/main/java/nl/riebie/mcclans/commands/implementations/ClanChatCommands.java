@@ -59,7 +59,7 @@ public class ClanChatCommands {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
-    @Command(name = "clan", description = "Talk in clan chat", isPlayerOnly = true, isClanOnly = true, clanPermission = "clanchat", spongePermission = "mcclans.user.chat.clan")
+    @Command(name = "clan", description = "Писать в клановй чат", isPlayerOnly = true, isClanOnly = true, clanPermission = "clanchat", spongePermission = "mcclans.user.chat.clan")
     public void clanChatCommand(Player player, ClanPlayerImpl clanPlayer, @Multiline @Parameter(name = "message") Optional<String> messageOpt) {
         if (messageOpt.isPresent()) {
             String message = messageOpt.get();
@@ -84,7 +84,7 @@ public class ClanChatCommands {
         }
     }
 
-    @Command(name = "ally", description = "Talk in ally chat", isPlayerOnly = true, isClanOnly = true, clanPermission = "allychat", spongePermission = "mcclans.user.chat.ally")
+    @Command(name = "ally", description = "Писать в чат альянса", isPlayerOnly = true, isClanOnly = true, clanPermission = "allychat", spongePermission = "mcclans.user.chat.ally")
     public void allyChatCommand(Player player, ClanPlayerImpl clanPlayer, @Multiline @Parameter(name = "message") Optional<String> optionalMessage) {
         if (optionalMessage.isPresent()) {
             String message = optionalMessage.get();
@@ -109,7 +109,7 @@ public class ClanChatCommands {
         }
     }
 
-    @Command(name = "global", description = "Talk in global chat", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.global")
+    @Command(name = "global", description = "Писать в глобальный чат", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.global")
     public void globalChatCommand(Player player, ClanPlayerImpl clanPlayer, @Multiline @Parameter(name = "message") Optional<String> optionalMessage) {
         if (optionalMessage.isPresent()) {
             String message = optionalMessage.get();

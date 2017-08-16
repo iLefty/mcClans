@@ -35,7 +35,7 @@ package nl.riebie.mcclans.commands.implementations;
  */
 public class ClanTagCommands {
 
-    @Command(name = "color", description = "Change the clan tag color", isPlayerOnly = true, isClanOnly = true, clanPermission = "tag", spongePermission = "mcclans.user.tag.color")
+    @Command(name = "color", description = "Изменить цвет названия", isPlayerOnly = true, isClanOnly = true, clanPermission = "tag", spongePermission = "mcclans.user.tag.color")
     public void tagColorCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "tagColor") TextColor textColor) {
         ClanImpl clan = clanPlayer.getClan();
         clan.setTagColor(textColor);

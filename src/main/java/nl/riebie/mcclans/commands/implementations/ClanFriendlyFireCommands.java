@@ -35,8 +35,8 @@ import org.spongepowered.api.command.CommandSource;
  */
 public class ClanFriendlyFireCommands {
 
-    private final static String CLAN_FRIENDLY_FIRE_DESCRIPTION = "Toggle the clan's friendly fire protection";
-    private final static String PLAYER_FRIENDLY_FIRE_DESCRIPTION = "Toggle your personal friendly fire protection";
+    private final static String CLAN_FRIENDLY_FIRE_DESCRIPTION = "Изменить защиту от PvP между участниками клана";
+    private final static String PLAYER_FRIENDLY_FIRE_DESCRIPTION = "Изменить собственную защиту от PvP";
 
     @Command(name = "clan", description = CLAN_FRIENDLY_FIRE_DESCRIPTION, isPlayerOnly = true, isClanOnly = true, clanPermission = "friendlyfire", spongePermission = "mcclans.user.friendlyfire.clan")
     public void clanFriendlyFireCommand(ClanPlayerImpl clanPlayer, @Parameter(name = "toggle") Toggle friendlyFireToggle) {

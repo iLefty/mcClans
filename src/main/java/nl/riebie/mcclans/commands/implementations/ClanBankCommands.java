@@ -43,7 +43,7 @@ import java.util.Optional;
  */
 public class ClanBankCommands {
 
-    @Command(name = "balance", description = "View the balance of the clan bank", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.bank.balance")
+    @Command(name = "balance", description = "Посмотреть баланс казны клана", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.bank.balance")
     public void clanBankBalanceCommand(CommandSource sender, ClanPlayerImpl clanPlayer) {
         if (Config.getBoolean(Config.USE_ECONOMY)) {
             ClanImpl clan = clanPlayer.getClan();
@@ -61,7 +61,7 @@ public class ClanBankCommands {
         }
     }
 
-    @Command(name = "deposit", description = "Deposit currency in the clan bank", isPlayerOnly = true, isClanOnly = true, clanPermission = "deposit", spongePermission = "mcclans.user.bank.deposit")
+    @Command(name = "deposit", description = "Вложить деньги в казну клана", isPlayerOnly = true, isClanOnly = true, clanPermission = "deposit", spongePermission = "mcclans.user.bank.deposit")
     public void clanBankDepositCommand(CommandSource sender, ClanPlayerImpl clanPlayer, @Parameter(name = "amount", constraint = PositiveNumberConstraint.class) double amount) {
         if (Config.getBoolean(Config.USE_ECONOMY)) {
             ClanImpl clan = clanPlayer.getClan();
@@ -77,7 +77,7 @@ public class ClanBankCommands {
         }
     }
 
-    @Command(name = "withdraw", description = "Withdraw currency from the clan bank", isPlayerOnly = true, isClanOnly = true, clanPermission = "withdraw", spongePermission = "mcclans.user.bank.withdraw")
+    @Command(name = "withdraw", description = "Забрать деньги из казны банка", isPlayerOnly = true, isClanOnly = true, clanPermission = "withdraw", spongePermission = "mcclans.user.bank.withdraw")
     public void clanBankWithdrawCommand(CommandSource sender, ClanPlayerImpl clanPlayer, @Parameter(name = "amount", constraint = PositiveNumberConstraint.class) double amount) {
         if (Config.getBoolean(Config.USE_ECONOMY)) {
             ClanImpl clan = clanPlayer.getClan();

@@ -34,7 +34,7 @@ import org.spongepowered.api.command.CommandSource;
  */
 public class ClanChatIgnoreCommands {
 
-    @Command(name = "clan", description = "Ignore clan chat", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.ignore.clan")
+    @Command(name = "clan", description = "Игнорировать чат клана", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.ignore.clan")
     public void clanChatCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "toggle") Toggle toggle) {
         boolean ignore = toggle.getBoolean(clanPlayer.getIgnoreClanChat());
         clanPlayer.setIgnoreClanChat(ignore);
@@ -45,7 +45,7 @@ public class ClanChatIgnoreCommands {
         }
     }
 
-    @Command(name = "ally", description = "Ignore ally chat", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.ignore.ally")
+    @Command(name = "ally", description = "Игнорировать чат альянса", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.chat.ignore.ally")
     public void allyChatCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer, @Parameter(name = "toggle") Toggle toggle) {
         boolean ignore = toggle.getBoolean(clanPlayer.getIgnoreAllyChat());
         clanPlayer.setIgnoreAllyChat(ignore);

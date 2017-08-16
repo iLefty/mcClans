@@ -342,7 +342,7 @@ public class CommandManager {
                                 String value = args[pIndex];
                                 if (!"".equals(constraint.getRegex()) && !value.matches(constraint.getRegex())) {
                                     commandSource.sendMessage(Messages.getWarningMessage(
-                                            String.format("Error while executing command: Value should match regex \'%s\'", constraint.getRegex())));
+                                            String.format("Ошибка при выполнении команды: Поддерживаемые символы \'%s\'", constraint.getRegex())));
                                     return;
                                 }
                                 if (pIndex != index) {
@@ -369,7 +369,7 @@ public class CommandManager {
                                 if (result.isSuccess()) {
                                     parameterList.add(result.getItem());
                                 } else {
-                                    commandSource.sendMessage(Messages.getWarningMessage(String.format("Error while executing command: %s", result.getErrorMessage())));
+                                    commandSource.sendMessage(Messages.getWarningMessage(String.format("Ошибка при выполнении команды: %s", result.getErrorMessage())));
                                     return;
                                 }
                             }
@@ -459,7 +459,7 @@ public class CommandManager {
                     Text.builder("== ").color(TextColors.DARK_GRAY).build(),
                     Text.builder("MC").color(TextColors.DARK_GREEN).build(),
                     Text.builder("Clans").color(TextColors.GREEN).build(),
-                    Text.of(" Help Page "),
+                    Text.of(" Страница помощи "),
                     Text.builder(String.valueOf(page)).color(TextColors.GREEN).build(),
                     Text.builder("/").color(TextColors.GRAY).build(),
                     Text.builder(String.valueOf(maxPages)).color(TextColors.GREEN).build(),
@@ -469,9 +469,9 @@ public class CommandManager {
             commandSender.sendMessage(header);
             if (page < maxPages) {
                 Text subHeader = Text.of(
-                        Text.builder("Type").color(TextColors.GRAY).build(),
+                        Text.builder("Напишите").color(TextColors.GRAY).build(),
                         Text.builder(String.format(" /clan %s %s", pageCommand, page + 1)).color(TextColors.DARK_GREEN),
-                        Text.builder(" to read the next page").color(TextColors.GRAY)
+                        Text.builder(" чтобы открыть следующую страницу").color(TextColors.GRAY)
                 );
                 commandSender.sendMessage(subHeader);
             }
@@ -571,12 +571,12 @@ public class CommandManager {
 
     private void displayParameterHelpPage(CommandSource commandSource, FilledCommand filledCommand) {
         commandSource.sendMessage(Text.EMPTY);
-        commandSource.sendMessage(Text.builder("Failed to execute command").color(TextColors.RED).build());
-        commandSource.sendMessage(Text.builder("This command requires the following parameters:").color(TextColors.RED).build());
+        commandSource.sendMessage(Text.builder("Не получилось выполнить команду").color(TextColors.RED).build());
+        commandSource.sendMessage(Text.builder("Команда требует параметр:").color(TextColors.RED).build());
         Text title = Text.of(
                 Text.builder("MC").color(TextColors.DARK_GREEN).build(),
                 Text.builder("Clans").color(TextColors.GREEN).build(),
-                Text.of(" Parameter Help Page")
+                Text.of(" Помощь с параметром")
         );
         HorizontalTable<NormalFilledParameter> table = new HorizontalTable<>(title, 5, (TableAdapter<NormalFilledParameter>) (row, parameter, index) -> {
             Text parameterName;
@@ -591,8 +591,8 @@ public class CommandManager {
             row.setValue("Description", parameterDescription);
 
         });
-        table.defineColumn("Parameter", 25);
-        table.defineColumn("Description", 30);
+        table.defineColumn("Параметр", 25);
+        table.defineColumn("Описание", 30);
 
         Text.Builder fullCommandString = Text.builder("/" + filledCommand.getFullPath());
 

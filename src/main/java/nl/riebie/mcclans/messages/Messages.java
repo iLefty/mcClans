@@ -549,7 +549,7 @@ public class Messages {
 
     public static void sendYouWereChargedCurrency(CommandSource commandSource, double price, String currencyName) {
         Text message = Text.join(
-                Text.builder("Вам предъявили обвинение ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("С вашего баланса сняли ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(price)).color(BASIC_HIGHLIGHT).build(),
                 Text.builder(" " + currencyName).color(BASIC_CHAT_COLOR).build()
         );
@@ -627,7 +627,7 @@ public class Messages {
 
     public static void sendCannotSetClanhomeForAnotherXTime(CommandSource commandSource, long time) {
         Text message = Text.join(
-                Text.builder("Cannot change clanhome for another ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Нельзя изменить точку дома в течении ").color(WARNING_CHAT_COLOR).build(),
                 Utils.formatTime(time, WARNING_CHAT_COLOR, WARNING_HIGHLIGHT)
         );
         commandSource.sendMessage(message);

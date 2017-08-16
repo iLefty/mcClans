@@ -46,7 +46,7 @@ import java.util.List;
  */
 public class ClanRankPermissionCommands {
 
-    @Command(name = "add", description = "Adds the given permissions to a rank", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.add")
+    @Command(name = "add", description = "Добавить право в ранг", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.add")
     public void clanRankPermissionAddCommand(CommandSource sender, ClanPlayerImpl clanPlayer, @Parameter(name = "rankName") String rankName,
                                              @Parameter(name = "permissions") List<ClanPermission> permissions) {
 
@@ -82,7 +82,7 @@ public class ClanRankPermissionCommands {
         }
     }
 
-    @Command(name = "set", description = "Sets the given permissions to a rank", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.set")
+    @Command(name = "set", description = "Установить право в ранг", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.set")
     public void clanRankPermissionSetCommand(CommandSource sender, ClanPlayerImpl clanPlayer, @Parameter(name = "rankName") String rankName,
                                              @Parameter(name = "permissions") List<ClanPermission> permissions) {
         ClanImpl clan = clanPlayer.getClan();
@@ -115,7 +115,7 @@ public class ClanRankPermissionCommands {
         }
     }
 
-    @Command(name = "remove", description = "Removes the given permissions from a rank", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.remove")
+    @Command(name = "remove", description = "Удалить право из ранга", isPlayerOnly = true, isClanOnly = true, clanPermission = "rank", spongePermission = "mcclans.user.rank.permission.remove")
     public void canPermissionRemoveCommand(CommandSource sender, ClanPlayerImpl clanPlayer, @Parameter(name = "rankName") String rankName,
                                            @Parameter(name = "permissions") List<String> permissions) {
         ClanImpl clan = clanPlayer.getClan();
@@ -151,15 +151,15 @@ public class ClanRankPermissionCommands {
         }
     }
 
-    @Command(name = "view", description = "View all available permissions", spongePermission = "mcclans.user.rank.permission.view")
+    @Command(name = "view", description = "Посмотреть все доступные права", spongePermission = "mcclans.user.rank.permission.view")
     public void clanPermissonViewCommand(CommandSource sender, @PageParameter int page) {
         HorizontalTable<ClanPermission> table = new HorizontalTable<>("Permissions", 10,
                 (TableAdapter<ClanPermission>) (row, permission, index) -> {
                     row.setValue("Permission", Text.of(permission.getName()));
                     row.setValue("Description", Text.builder(permission.getDescription()).color(TextColors.GRAY).build());
                 });
-        table.defineColumn("Permission", 20);
-        table.defineColumn("Description", 20);
+        table.defineColumn("Право", 20);
+        table.defineColumn("Описание", 20);
 
         List<ClanPermission> permissions = ClansImpl.getInstance().getClanPermissionManager().getClanPermissions();
 
