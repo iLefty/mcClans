@@ -89,31 +89,31 @@ public class ClanCommands {
     }
 
     @ChildGroup(ClanRankCommands.class)
-    @Command(name = "rank", description = "Top command for all rank commands", spongePermission = "mcclans.user.rank.helppage")
+    @Command(name = "rank", description = "Команды для управления рангами", spongePermission = "mcclans.user.rank.helppage")
     public void clanRankRootCommand(CommandSource commandSource) {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
     @ChildGroup(ClanFriendlyFireCommands.class)
-    @Command(name = "friendlyfire", description = "Top command for all friendlyfire commands", spongePermission = "mcclans.user.friendlyfire.helppage")
+    @Command(name = "friendlyfire", description = "Команды для управления PvP в клане", spongePermission = "mcclans.user.friendlyfire.helppage")
     public void clanFriendlyFireRootCommand(CommandSource commandSource) {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
     @ChildGroup(ClanChatCommands.class)
-    @Command(name = "chat", description = "Top command for all chat commands", spongePermission = "mcclans.user.chat.helppage")
+    @Command(name = "chat", description = "Чат команды", spongePermission = "mcclans.user.chat.helppage")
     public void clanChatRootCommand(CommandSource commandSource) {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
     @ChildGroup(ClanPlayerCommands.class)
-    @Command(name = "player", description = "Top command for all player commands", spongePermission = "mcclans.user.player.helppage")
+    @Command(name = "player", description = "Основные команды для игроков", spongePermission = "mcclans.user.player.helppage")
     public void clanPlayerRootCommand(CommandSource commandSource) {
         commandSource.sendMessage(Text.of("TODO"));
     }
 
     @ChildGroup(ClanBankCommands.class)
-    @Command(name = "bank", description = "Top command for all bank commands", spongePermission = "mcclans.user.bank.helppage")
+    @Command(name = "bank", description = "Основные команды банковских операций", spongePermission = "mcclans.user.bank.helppage")
     public void clanBankRootCommand(CommandSource commandSource) {
         commandSource.sendMessage(Text.of("TODO"));
     }
@@ -419,7 +419,7 @@ public class ClanCommands {
         return allyList.build();
     }
 
-    @Command(name = "resign", description = "Resign from a clan", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.resign")
+    @Command(name = "resign", description = "Уйти в отставку", isPlayerOnly = true, isClanOnly = true, spongePermission = "mcclans.user.resign")
     public void clanResignCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         RankImpl rank = clanPlayer.getRank();
         ClanImpl clan = clanPlayer.getClan();
@@ -546,7 +546,7 @@ public class ClanCommands {
         ).submit(MCClans.getPlugin());
     }
 
-    @Command(name = "sethome", description = "Узнать локацию кланового дома", isPlayerOnly = true, isClanOnly = true, clanPermission = "sethome", spongePermission = "mcclans.user.sethome")
+    @Command(name = "sethome", description = "Установить локацию кланового дома", isPlayerOnly = true, isClanOnly = true, clanPermission = "sethome", spongePermission = "mcclans.user.sethome")
     public void clanSetHomeCommand(CommandSource commandSource, ClanPlayerImpl clanPlayer) {
         Player player = (Player) commandSource;
         ClanImpl clan = clanPlayer.getClan();

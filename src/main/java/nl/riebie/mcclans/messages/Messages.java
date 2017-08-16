@@ -48,7 +48,7 @@ public class Messages {
     public static final String PLAYER_DOES_NOT_EXIST = "Игрок не существует";
     public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "You cannot resign from the clan as the Owner. Transfer your rank to another clan member before resigning";
     public static final String YOU_CANNOT_OVERWRITE_THE_OWNER_RANK = "You cannot overwrite the Owner rank. The Owner needs to transfer his rank to another clan member first";
-    public static final String ONLY_THE_OWNER_CAN_CHANGE_OWNER = "Only the owner can change the owner of the clan";
+    public static final String ONLY_THE_OWNER_CAN_CHANGE_OWNER = "Это доступно только главе клана";
 
     public static final String NO_PENDING_CLAN_INVITE = "У вас нет приглашений";
     public static final String CLAN_INVITE_ACCEPTED = "Приглашение в клан принято";
@@ -56,14 +56,14 @@ public class Messages {
     public static final String NO_PENDING_ALLY_INVITE = "Нет союзных предложений";
     public static final String ALLY_INVITE_ACCEPTED = "Союз принят";
     public static final String ALLY_INVITE_DECLINED = "Союз отклонён";
-    public static final String YOU_CANNOT_REMOVE_THE_OWNER_FROM_THE_CLAN = "You cannot remove the owner from the clan";
-    public static final String THIS_CLAN_IS_NOT_ACCEPTING_ALLY_INVITES = "This clan is not accepting ally invites";
+    public static final String YOU_CANNOT_REMOVE_THE_OWNER_FROM_THE_CLAN = "Вы не можете изгнать главу клана";
+    public static final String THIS_CLAN_IS_NOT_ACCEPTING_ALLY_INVITES = "Клан не принимает запросы на альянс";
     public static final String YOUR_CLANS_ARE_ALREADY_ALLIES = "Ваши кланы уже в союзе";
-    public static final String THIS_CLAN_IS_NOT_AN_ALLY = "This clan is not an ally";
-    public static final String YOU_CANNOT_BECOME_ALLIES_WITH_YOUR_OWN_CLAN = "You cannot become allies with.. your own.. clan.. wat";
+    public static final String THIS_CLAN_IS_NOT_AN_ALLY = "Этот клан не состоит в альянсе с вами";
+    public static final String YOU_CANNOT_BECOME_ALLIES_WITH_YOUR_OWN_CLAN = "Вы не можете стать союзником.. своего.. клана.. ЧЁ??";
     public static final String THIS_IS_NOT_A_VALID_COLOR = "This is not a valid color";
-    public static final String YOUR_CLAN_NO_LONGER_ACCEPTS_ALLY_INVITES = "Your clan no longer accepts ally invites";
-    public static final String YOUR_CLAN_NOW_ACCEPTS_ALLY_INVITES = "Your clan now accepts ally invites";
+    public static final String YOUR_CLAN_NO_LONGER_ACCEPTS_ALLY_INVITES = "Ваш клан больше не принимает запросы на альянс";
+    public static final String YOUR_CLAN_NOW_ACCEPTS_ALLY_INVITES = "Ваш клан теперь принимает запросы на альянс";
     public static final String CLAN_HOME_LOCATION_SET = "Установлена точка дома для клана";
     public static final String CLAN_HOME_LOCATION_IS_NOT_SET = "Точка дома для клана, не установлена";
     public static final String NO_TABLE_TO_BROWSE = "You must execute a pageable command first";
@@ -71,24 +71,24 @@ public class Messages {
     public static final String YOU_NEED_TO_MOVE_BEFORE_ATTEMPTING_ANOTHER_TELEPORT = "You need to move before attempting another teleport";
     public static final String PLAYER_PROPERTIES_REMOVED = "Player properties removed";
     public static final String THESE_ARE_THE_SAME_PLAYERS = "These are the same players";
-    public static final String FRIENDLY_FIRE_IS_OFF = "Friendly fire protection is on";
-    public static final String ACTIVATED_PERSONAL_FRIENDLY_FIRE_PROTECTION = "Activated personal friendly fire protection";
-    public static final String DEACTIVATED_PERSONAL_FRIENDLY_FIRE_PROTECTION = "Deactivated personal friendly fire protection";
+    public static final String FRIENDLY_FIRE_IS_OFF = "Включена защита от PvP между участниками клана";
+    public static final String ACTIVATED_PERSONAL_FRIENDLY_FIRE_PROTECTION = "Активирована защита от PvP между участниками клана";
+    public static final String DEACTIVATED_PERSONAL_FRIENDLY_FIRE_PROTECTION = "Отключена защита от PvP между участниками клана";
     public static final String PLAYER_STATISTICS_SUCCESSFULLY_MODIFIED = "Player statistics successfully modified";
     public static final String ECONOMY_USAGE_IS_CURRENTLY_DISABLED = "Economy usage is currently disabled";
     public static final String NO_ECONOMY_ACCOUNT_FOUND = "No economy account found!";
-    public static final String YOU_ARE_NOW_IGNORING_CLAN_CHAT = "You are now ignoring clan chat";
-    public static final String YOU_HAVE_STOPPED_IGNORING_CLAN_CHAT = "You have stopped ignoring clan chat";
-    public static final String YOU_ARE_NOW_IGNORING_ALLY_CHAT = "You are now ignoring ally chat";
-    public static final String YOU_HAVE_STOPPED_IGNORING_ALLY_CHAT = "You have stopped ignoring ally chat";
+    public static final String YOU_ARE_NOW_IGNORING_CLAN_CHAT = "Вы начали игнорировать чат клана";
+    public static final String YOU_HAVE_STOPPED_IGNORING_CLAN_CHAT = "Вы разблокировали чат клана";
+    public static final String YOU_ARE_NOW_IGNORING_ALLY_CHAT = "Вы заблокировали чат альянса";
+    public static final String YOU_HAVE_STOPPED_IGNORING_ALLY_CHAT = "Вы разблокировали чат альянса";
     public static final String YOU_ARE_NOW_SPYING_ON_ALL_CLAN_CHATS = "You are now spying on all clan chats";
     public static final String YOU_HAVE_STOPPED_SPYING_ON_ALL_CLAN_CHATS = "You have stopped spying on all clan chats";
 
-    public static final String YOU_DO_NOT_HAVE_PERMISSION_TO_USE_THIS_COMMAND = "You do not have permission to use this command";
-    public static final String THIS_COMMAND_HAS_NO_INFORMATION_TO_DISPLAY = "This command has no information to display";
-    public static final String PAGE_DOES_NOT_EXIST = "Page does not exist";
+    public static final String YOU_DO_NOT_HAVE_PERMISSION_TO_USE_THIS_COMMAND = "У вас нет прав на выполнение этой команды";
+    public static final String THIS_COMMAND_HAS_NO_INFORMATION_TO_DISPLAY = "Команда не содержит информации";
+    public static final String PAGE_DOES_NOT_EXIST = "Страница не существует";
     public static final String YOU_NEED_TO_BE_A_PLAYER_TO_PERFORM_THIS_COMMAND = "You need to be a player to use this command";
-    public static final String YOU_NEED_TO_BE_A_MEMBER_OF_A_CLAN_TO_PERFORM_THIS_COMMAND = "You need to be a member of a clan to use this command";
+    public static final String YOU_NEED_TO_BE_A_MEMBER_OF_A_CLAN_TO_PERFORM_THIS_COMMAND = "Вы должны состоять в клане";
     public static final String CONFIGURATION_RELOADED = "Configuration reloaded";
     public static final String SYSTEM_BACKUP_INITIATED = "System backup initiated";
 
@@ -184,18 +184,18 @@ public class Messages {
 
     public static void sendClanBroadcastMessagePlayerDeclinedClanInvite(ClanImpl clan, String playerName, String permission) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" declined the clan invite").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" отклонил приглашение в клан").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(permission, message);
     }
 
     public static void sendClanBroadcastMessagePlayerInvitedToTheClan(ClanImpl clan, String playerName, String inviterName, String permission) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has been invited to the clan by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" был приглашён в клан игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(inviterName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(permission, message);
@@ -204,9 +204,9 @@ public class Messages {
     public static void sendClanBroadcastMessageClanHasBeenInvitedToBecomeAlliesBy(ClanImpl clan, String clanName, String inviterName,
                                                                                   String permission) {
         Text message = Text.join(
-                Text.builder("Clan ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Клан ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(clanName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has been invited to become allies by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" получил заявку на союз от игрока ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(inviterName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(permission, message);
@@ -214,9 +214,9 @@ public class Messages {
 
     public static void sendClanBroadcastMessageClanHasDeclinedToBecomeAllies(ClanImpl clan, String clanName, String permission) {
         Text message = Text.join(
-                Text.builder("Clan ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Клан ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(clanName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has declined to become allies with your clan").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" отклонил вашу заявку на союз").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(permission, message);
     }
@@ -224,9 +224,9 @@ public class Messages {
     public static void sendClanBroadcastMessagePlayerHasDeclinedToBecomeAlliesWithClan(ClanImpl clan, String playerName, String clanName,
                                                                                        String permission) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has declined to become allies with ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" отклонил союзничество с ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(clanName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(permission, message);
@@ -236,14 +236,14 @@ public class Messages {
                                                                                             String permission) {
         Text message1 = Text.of("");
         Text message2 = Text.join(
-                Text.builder("Your clan has been invited to become allies with ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ваш клан был приглашен стать союзником ").color(BASIC_CHAT_COLOR).build(),
                 coloredClanTag,
                 Text.builder(" " + clanName).color(BASIC_HIGHLIGHT).build()
         );
         Text message3 = Text.join(
-                Text.builder("To accept or decline type ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Чтобы принять - ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder("/clan ally accept").color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" or ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" чтобы отклонить - ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder("/clan ally decline").color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(permission, message1, message2, message3);
@@ -252,14 +252,14 @@ public class Messages {
     public static void sendYourClanHasBeenInvitedToBecomeAlliesWithClan(ClanPlayerImpl clanPlayer, String clanName, Text coloredClanTag) {
         Text message1 = Text.of("");
         Text message2 = Text.join(
-                Text.builder("Your clan has been invited to become allies with ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ваш клан был приглашен стать союзником ").color(BASIC_CHAT_COLOR).build(),
                 coloredClanTag,
                 Text.builder(" " + clanName).color(BASIC_HIGHLIGHT).build()
         );
         Text message3 = Text.join(
-                Text.builder("To accept or decline type ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Чтобы принять - ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder("/clan ally accept").color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" or ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" чтобы отклонить - ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder("/clan ally decline").color(BASIC_HIGHLIGHT).build()
         );
         clanPlayer.sendMessage(Text.of(message1, message2, message3));
@@ -267,7 +267,7 @@ public class Messages {
 
     public static void sendClanBroadcastMessageYourClanHasBecomeAlliesWithClan(ClanImpl clan, String allyClanName) {
         Text message = Text.join(
-                Text.builder("Your clan has become allies with ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Вы теперь в союзе с ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(allyClanName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(message);
@@ -275,9 +275,9 @@ public class Messages {
 
     public static void sendClanBroadcastMessagePlayerHasEndedTheAllianceWithClan(ClanImpl clan, String playerName, String allyClanName) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has ended the alliance with ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" прекратил союз с ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(allyClanName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(message);
@@ -285,16 +285,16 @@ public class Messages {
 
     public static void sendClanBroadcastMessageClanHasEndedTheAllianceWithYourClan(ClanImpl clan, String allyClanName) {
         Text message = Text.join(
-                Text.builder("Clan ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Клан ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(allyClanName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has ended the alliance with your clan").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" прекратил союз с вашим кланом").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(message);
     }
 
     public static void sendYouHaveBeenRemovedFromClan(ClanPlayerImpl clanPlayer, String clanName) {
         Text message = Text.join(
-                Text.builder("You have been removed from ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Вас изгнали из клана ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(clanName).color(BASIC_HIGHLIGHT).build()
         );
         clanPlayer.sendMessage(message);
@@ -302,18 +302,18 @@ public class Messages {
 
     public static void sendRankSuccessfullyCreated(CommandSource commandSource, String rankName) {
         Text message = Text.join(
-                Text.builder("Rank ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ранг ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" successfully created").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" успешно создан").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendRankSuccessfullyModified(CommandSource commandSource, String rankName) {
         Text message = Text.join(
-                Text.builder("Rank ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ранг ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" successfully modified").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" изменён").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
@@ -322,14 +322,14 @@ public class Messages {
         commandSource.sendMessages(
                 Text.of(""),
                 Text.join(
-                        Text.builder("You have been invited to join ").color(BASIC_CHAT_COLOR).build(),
+                        Text.builder("Вас пригласили в клан ").color(BASIC_CHAT_COLOR).build(),
                         coloredClanTag,
                         Text.builder(" " + clanName).color(BASIC_HIGHLIGHT).build()
                 ),
                 Text.join(
-                        Text.builder("To accept or decline type ").color(BASIC_CHAT_COLOR).build(),
+                        Text.builder("Чтобы принять напишите: ").color(BASIC_CHAT_COLOR).build(),
                         Text.builder("/clan accept").color(BASIC_HIGHLIGHT).build(),
-                        Text.builder(" or ").color(BASIC_CHAT_COLOR).build(),
+                        Text.builder(" чтобы отклонить: ").color(BASIC_CHAT_COLOR).build(),
                         Text.builder("/clan decline").color(BASIC_HIGHLIGHT).build()
                 )
         );
@@ -337,7 +337,7 @@ public class Messages {
 
     public static void sendAddingPermissionFailedNotAValidPermission(CommandSource commandSource, String pcode) {
         Text message = Text.join(
-                Text.builder("Adding permission ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Добавлено право ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(pcode).color(WARNING_HIGHLIGHT).build(),
                 Text.builder(" failed: Not a valid permission ").color(WARNING_CHAT_COLOR).build()
         );
@@ -346,7 +346,7 @@ public class Messages {
 
     public static void sendRemovingPermissionFailedNotAValidPermission(CommandSource commandSource, String pcode) {
         Text message = Text.join(
-                Text.builder("Removing permission ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Удалено право ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(pcode).color(WARNING_HIGHLIGHT).build(),
                 Text.builder(" failed: Not a valid permission ").color(WARNING_CHAT_COLOR).build()
         );
@@ -373,7 +373,7 @@ public class Messages {
 
     public static void sendSuccessfullySetThisPermission(CommandSource commandSource, String pcode) {
         Text message = Text.join(
-                Text.builder("Successfully set permission ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Право установлено ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(pcode).color(BASIC_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -381,7 +381,7 @@ public class Messages {
 
     public static void sendSuccessfullyAddedThisPermission(CommandSource commandSource, String pcode) {
         Text message = Text.join(
-                Text.builder("Successfully added permission ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Право добавлено ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(pcode).color(BASIC_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -397,18 +397,18 @@ public class Messages {
 
     public static void sendRankExistsAlready(CommandSource commandSource, String rankName) {
         Text message = Text.join(
-                Text.builder("Rank ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Ранг ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(rankName).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(" exists already").color(WARNING_CHAT_COLOR).build()
+                Text.builder(" уже существует").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendRankSuccessfullyRenamed(CommandSource commandSource, String rankName, String newRankName) {
         Text message = Text.join(
-                Text.builder("Rank ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ранг ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" successfully renamed to ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" переименован в ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(newRankName).color(BASIC_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -416,45 +416,45 @@ public class Messages {
 
     public static void sendRankRemoved(CommandSource commandSource, String rankName) {
         Text message = Text.join(
-                Text.builder("Rank ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ранг ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" removed").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" удалён").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendPlayerAlreadyInClan(CommandSource commandSource, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(playerName).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(" is already a member of a clan").color(WARNING_CHAT_COLOR).build()
+                Text.builder(" уже состоит в клане").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendPlayerAlreadyInvitedByAnotherClan(CommandSource commandSource, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(playerName).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(" has already been invited by another clan").color(WARNING_CHAT_COLOR).build()
+                Text.builder(" приглашён в другой клан").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendPlayerNotOnline(CommandSource commandSource, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(playerName).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(" is not online").color(WARNING_CHAT_COLOR).build()
+                Text.builder(" не в сети").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendRankOfPlayerSuccessfullyChangedToRank(CommandSource commandSource, String playerName, String rankName) {
         Text message = Text.join(
-                Text.builder("Rank of player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ранг игрока ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" successfully changed to ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" изменён на ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -462,23 +462,23 @@ public class Messages {
 
     public static Text getYourRankHasBeenChangedToRank(String rankName) {
         return Text.join(
-                Text.builder("Your rank has been changed to ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Ваш ранг изменён на ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(rankName).color(BASIC_HIGHLIGHT).build()
         );
     }
 
     public static void sendPlayerNotAMemberOfThisClan(CommandSource commandSource, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(playerName).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(" is not a member of this clan").color(WARNING_CHAT_COLOR).build()
+                Text.builder(" не состоит в клане").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendSuccessfullyResignedFromClan(CommandSource commandSource, String clanName) {
         Text message = Text.join(
-                Text.builder("Successfully resigned from ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Вы покинули клан ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(clanName).color(BASIC_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -486,16 +486,16 @@ public class Messages {
 
     public static void sendThisClanHasAlreadyBeenInvitedToBecomeAlliesWithClan(CommandSource commandSource, String otherInvitingClan) {
         Text message = Text.join(
-                Text.builder("This clan has already been invited to become allies with ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Клан уже приглашен стать союзником с ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(otherInvitingClan).color(WARNING_HIGHLIGHT).build(),
-                Text.builder(". Please try again after they have accepted or declined").color(WARNING_CHAT_COLOR).build()
+                Text.builder(". Повторите попытку после их ответа на другое приглашение").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendSuccessfullyChangedTheClanTagColorTo(CommandSource commandSource, Text coloredClanTag) {
         Text message = Text.join(
-                Text.builder("Successfully changed the clan tag color to ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Цвет названия изменён на ").color(BASIC_CHAT_COLOR).build(),
                 coloredClanTag
         );
         commandSource.sendMessage(message);
@@ -506,7 +506,7 @@ public class Messages {
                 Text.builder("[").color(TextColors.GRAY).build(),
                 Text.builder("G").color(TextColors.WHITE).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
-                Text.builder("Now talking in global").color(BASIC_CHAT_COLOR).build()
+                Text.builder("Вы пишете в глобал").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
@@ -516,7 +516,7 @@ public class Messages {
                 Text.builder("[").color(TextColors.GRAY).build(),
                 Text.builder("CC").color(TextColors.YELLOW).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
-                Text.builder("Now talking in clan chat").color(BASIC_CHAT_COLOR).build()
+                Text.builder("Вы пишете в клановый чат").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
@@ -526,14 +526,14 @@ public class Messages {
                 Text.builder("[").color(TextColors.GRAY).build(),
                 Text.builder("AC").color(TextColors.GOLD).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
-                Text.builder("Now talking in ally chat").color(BASIC_CHAT_COLOR).build()
+                Text.builder("Вы пишете в чат альянса").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendYouNeedToUnignoreClanChatBeforeTalking(CommandSource commandSource) {
         Text message = Text.join(
-                Text.builder("You need to unignore clan chat before you can talk. Use ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Чтобы написать в этот чат, нужно разблокировать его. Используйте ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder("/clan chat ignore clan").color(WARNING_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -541,7 +541,7 @@ public class Messages {
 
     public static void sendYouNeedToUnignoreAllyChatBeforeTalking(CommandSource commandSource) {
         Text message = Text.join(
-                Text.builder("You need to unignore ally chat before you can talk. Use ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Чтобы написать в этот чат, нужно разблокировать его. Используйте ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder("/clan chat ignore ally").color(WARNING_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -549,7 +549,7 @@ public class Messages {
 
     public static void sendYouWereChargedCurrency(CommandSource commandSource, double price, String currencyName) {
         Text message = Text.join(
-                Text.builder("You were charged ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Вам предъявили обвинение ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(price)).color(BASIC_HIGHLIGHT).build(),
                 Text.builder(" " + currencyName).color(BASIC_CHAT_COLOR).build()
         );
@@ -558,7 +558,7 @@ public class Messages {
 
     public static void sendYouDoNotHaveEnoughCurrency(CommandSource commandSource, double price, String currencyName) {
         Text message = Text.join(
-                Text.builder("You do not have ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("У вас нету ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(price)).color(WARNING_HIGHLIGHT).build(),
                 Text.builder(" " + currencyName).color(WARNING_CHAT_COLOR).build()
         );
@@ -567,7 +567,7 @@ public class Messages {
 
     public static void sendNotEnoughCurrencyOnClanBank(CommandSource commandSource, double price, String currencyName) {
         Text message = Text.join(
-                Text.builder("The clan bank does not have ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("В казне клана нету ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(price)).color(WARNING_HIGHLIGHT).build(),
                 Text.builder(" " + currencyName).color(WARNING_CHAT_COLOR).build()
         );
@@ -576,7 +576,7 @@ public class Messages {
 
     public static void sendClanBankBalance(CommandSource commandSource, double balance, String currencyName) {
         Text message = Text.join(
-                Text.builder("Clan bank balance: ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Баланс клана: ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(balance)).color(BASIC_HIGHLIGHT).build(),
                 Text.builder(" " + currencyName).color(BASIC_CHAT_COLOR).build()
         );
@@ -585,42 +585,42 @@ public class Messages {
 
     public static void sendClanBroadcastMessageDepositedInClanBank(ClanImpl clan, String playerName, CommandSource commandSource, double amount, String currencyName) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрока ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" deposited ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" вложил ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(amount)).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" " + currencyName + " in the clan bank").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" " + currencyName + " в казну банка").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(message);
     }
 
     public static void sendClanBroadcastMessageWithdrewFromClanBank(ClanImpl clan, String playerName, CommandSource commandSource, double amount, String currencyName) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" withdrew ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" взял ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(amount)).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" " + currencyName + " from the clan bank").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" " + currencyName + " из казны банка").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(message);
     }
 
     public static void sendTeleportingInXSeconds(CommandSource commandSource, int seconds) {
         Text message = Text.join(
-                Text.builder("Teleporting in ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Телепортация через ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(seconds)).color(BASIC_HIGHLIGHT).build(),
                 Text.of(" "),
-                Text.builder((seconds == 1) ? "second" : "seconds").color(BASIC_CHAT_COLOR).build()
+                Text.builder((seconds == 1) ? "секунду" : "секунд").color(BASIC_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
 
     public static void sendYouCanTeleportInXSeconds(CommandSource commandSource, int seconds) {
         Text message = Text.join(
-                Text.builder("You can teleport in ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Вы телепортируетесь через ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(String.valueOf(seconds)).color(WARNING_HIGHLIGHT).build(),
                 Text.of(" "),
-                Text.builder((seconds == 1) ? "second" : "seconds").color(WARNING_CHAT_COLOR).build()
+                Text.builder((seconds == 1) ? "секунду" : "секунд").color(WARNING_CHAT_COLOR).build()
         );
         commandSource.sendMessage(message);
     }
@@ -645,7 +645,7 @@ public class Messages {
 
     public static void sendYouDoNotHaveTheRequiredPermission(CommandSource commandSource, String permission) {
         Text message = Text.join(
-                Text.builder("You do not have the required permission: ").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Вам нужно иметь разрешение: ").color(WARNING_CHAT_COLOR).build(),
                 Text.builder(permission).color(WARNING_HIGHLIGHT).build()
         );
         commandSource.sendMessage(message);
@@ -654,11 +654,11 @@ public class Messages {
 
     public static void sendFailedToExecuteCommandParameterContainsIllegalCharacters(CommandSource commandSource, String parameter) {
         commandSource.sendMessages(
-                Text.builder("Failed to execute command").color(WARNING_CHAT_COLOR).build(),
+                Text.builder("Не получилось выполнить команду").color(WARNING_CHAT_COLOR).build(),
                 Text.join(
-                        Text.builder("Parameter ").color(WARNING_CHAT_COLOR).build(),
+                        Text.builder("Параметр ").color(WARNING_CHAT_COLOR).build(),
                         Text.builder(parameter).color(WARNING_HIGHLIGHT).build(),
-                        Text.builder(" contains illegal characters").color(WARNING_CHAT_COLOR).build()
+                        Text.builder(" содержит недопустимые символы").color(WARNING_CHAT_COLOR).build()
                 )
         );
     }
