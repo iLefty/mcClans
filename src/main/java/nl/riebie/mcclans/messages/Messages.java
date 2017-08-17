@@ -46,7 +46,7 @@ public class Messages {
     public static final String RANK_DOES_NOT_EXIST = "Ранг не существует";
     public static final String RANK_IS_NOT_CHANGEABLE = "Ранг нельзя изменить";
     public static final String PLAYER_DOES_NOT_EXIST = "Игрок не существует";
-    public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "Вы не можете покинуть клан пока вы его глава. Отдайте своё звание другому игроку";
+    public static final String YOU_CANNOT_RESIGN_FROM_THE_CLAN_AS_THE_OWNER = "Вы не можете покинуть клан пока вы его основатель. Отдайте своё звание другому игроку";
     public static final String YOU_CANNOT_OVERWRITE_THE_OWNER_RANK = "You cannot overwrite the Owner rank. The Owner needs to transfer his rank to another clan member first";
     public static final String ONLY_THE_OWNER_CAN_CHANGE_OWNER = "Это доступно только главе клана";
 
@@ -118,10 +118,10 @@ public class Messages {
 
     public static void sendBroadcastMessageClanCreatedBy(String clanName, Text coloredClanTag, String creator) {
         Text message = Text.join(
-                Text.builder("Clan ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Клан ").color(BASIC_CHAT_COLOR).build(),
                 coloredClanTag,
                 Text.builder(" " + clanName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" created by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" создан игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(creator).color(BASIC_HIGHLIGHT).build()
         );
         Sponge.getServer().getBroadcastChannel().send(message);
@@ -129,10 +129,10 @@ public class Messages {
 
     public static void sendBroadcastMessageClanDisbandedBy(String clanName, Text coloredClanTag, String disbander) {
         Text message = Text.join(
-                Text.builder("Clan ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Клан ").color(BASIC_CHAT_COLOR).build(),
                 coloredClanTag,
                 Text.builder(" " + clanName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has been disbanded by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" распущен игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(disbander).color(BASIC_HIGHLIGHT).build()
         );
         Sponge.getServer().getBroadcastChannel().send(message);
@@ -140,7 +140,7 @@ public class Messages {
 
     public static void sendClanBroadcastMessageClanFriendlyFireProtectionHasBeenActivatedByPlayer(ClanImpl clan, String playerName) {
         Text message = Text.join(
-                Text.builder("Clan friendly fire protection has been activated by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Защита от PvP между участниками клана включена игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(message);
@@ -148,7 +148,7 @@ public class Messages {
 
     public static void sendClanBroadcastMessageClanFriendlyFireProtectionHasBeenDeactivatedByPlayer(ClanImpl clan, String playerName) {
         Text message = Text.join(
-                Text.builder("Clan friendly fire protection has been deactivated by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Защита от PvP между участниками клана отключена игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(message);
@@ -156,18 +156,18 @@ public class Messages {
 
     public static void sendClanBroadcastMessagePlayerResignedFromTheClan(ClanImpl clan, String playerName) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" resigned from the clan").color(BASIC_CHAT_COLOR).build()
+                Text.builder(" покинул клан").color(BASIC_CHAT_COLOR).build()
         );
         clan.sendMessage(message);
     }
 
     public static void sendClanBroadcastMessagePlayerRemovedFromTheClanBy(ClanImpl clan, String playerName, String removerPlayer) {
         Text message = Text.join(
-                Text.builder("Player ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder("Игрок ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(playerName).color(BASIC_HIGHLIGHT).build(),
-                Text.builder(" has been removed from the clan by ").color(BASIC_CHAT_COLOR).build(),
+                Text.builder(" изгнан из клана игроком ").color(BASIC_CHAT_COLOR).build(),
                 Text.builder(removerPlayer).color(BASIC_HIGHLIGHT).build()
         );
         clan.sendMessage(message);
@@ -514,7 +514,7 @@ public class Messages {
     public static void sendNowTalkingInClanChat(CommandSource commandSource) {
         Text message = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("CC").color(TextColors.YELLOW).build(),
+                Text.builder("Клановый").color(TextColors.YELLOW).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
                 Text.builder("Вы пишете в клановый чат").color(BASIC_CHAT_COLOR).build()
         );
@@ -524,7 +524,7 @@ public class Messages {
     public static void sendNowTalkingInAllyChat(CommandSource commandSource) {
         Text message = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("AC").color(TextColors.GOLD).build(),
+                Text.builder("Альянс").color(TextColors.GOLD).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
                 Text.builder("Вы пишете в чат альянса").color(BASIC_CHAT_COLOR).build()
         );

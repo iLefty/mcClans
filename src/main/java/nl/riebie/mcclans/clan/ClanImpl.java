@@ -516,7 +516,7 @@ public class ClanImpl implements Clan, Cloneable {
 
         Text textMessage = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("CC").color(TextColors.DARK_GREEN).build(),
+                Text.builder("Клановый").color(TextColors.DARK_GREEN).build(),
                 Text.builder("] [").color(TextColors.GRAY).build(),
                 Text.builder(sendingPlayerRank).color(TextColors.BLUE).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
@@ -531,7 +531,7 @@ public class ClanImpl implements Clan, Cloneable {
 
         Text textMessage = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("AC").color(TextColors.DARK_GREEN).build(),
+                Text.builder("Альянс").color(TextColors.DARK_GREEN).build(),
                 Text.builder("] [").color(TextColors.GRAY).build(),
                 sendingPlayerClanTagColored,
                 Text.builder("] ").color(TextColors.GRAY).build(),

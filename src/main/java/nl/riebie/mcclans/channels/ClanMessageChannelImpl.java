@@ -111,7 +111,7 @@ public class ClanMessageChannelImpl extends AbstractMutableMessageChannel implem
 
         Text newMessage = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("CC").color(TextColors.YELLOW).build(),
+                Text.builder("Клановый").color(TextColors.YELLOW).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
                 (rankText == null) ? Text.of("") : rankText,
                 Text.of(clanPlayer.getName() + ": "),

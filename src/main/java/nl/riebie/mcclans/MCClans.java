@@ -67,7 +67,7 @@ import java.util.*;
  * Created by Kippers on 8-12-2015.
  */
 @Plugin(
-        id = "mcclans", name = "MCClans", version = "1.5", description = "Player grouping by forming clans",
+        id = "mcclans", name = "MCClans", version = "russian", description = "Translation on Russian",
         dependencies = @Dependency(id = "nucleus", optional = true)
 )
 public class MCClans {

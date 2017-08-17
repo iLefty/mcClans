@@ -591,8 +591,8 @@ public class CommandManager {
             row.setValue("Description", parameterDescription);
 
         });
-        table.defineColumn("Параметр", 25);
-        table.defineColumn("Описание", 30);
+        table.defineColumn("Parameter", 25);
+        table.defineColumn("Description", 30);
 
         Text.Builder fullCommandString = Text.builder("/" + filledCommand.getFullPath());
 

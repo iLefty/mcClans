@@ -108,7 +108,7 @@ public class AllyMessageChannelImpl extends AbstractMutableMessageChannel implem
 
         Text newMessage = Text.join(
                 Text.builder("[").color(TextColors.GRAY).build(),
-                Text.builder("AC").color(TextColors.GOLD).build(),
+                Text.builder("Альянс").color(TextColors.GOLD).build(),
                 Text.builder("] ").color(TextColors.GRAY).build(),
                 (clanTagText == null) ? Text.of("") : clanTagText,
                 Text.of(clanPlayer.getName() + ": "),

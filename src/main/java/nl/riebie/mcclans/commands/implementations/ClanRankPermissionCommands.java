@@ -158,8 +158,8 @@ public class ClanRankPermissionCommands {
                     row.setValue("Permission", Text.of(permission.getName()));
                     row.setValue("Description", Text.builder(permission.getDescription()).color(TextColors.GRAY).build());
                 });
-        table.defineColumn("Право", 20);
-        table.defineColumn("Описание", 20);
+        table.defineColumn("Permission", 20);
+        table.defineColumn("Description", 20);
 
         List<ClanPermission> permissions = ClansImpl.getInstance().getClanPermissionManager().getClanPermissions();
 

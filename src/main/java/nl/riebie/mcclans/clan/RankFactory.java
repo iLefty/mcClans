@@ -34,8 +34,8 @@ import java.util.List;
 public class RankFactory {
 
     private static RankFactory instance;
-    private final static String OWNER_IDENTIFIER = "Owner";
-    private final static String RECRUIT_IDENTIFIER = "Recruit";
+    private final static String OWNER_IDENTIFIER = "Основатель";
+    private final static String RECRUIT_IDENTIFIER = "Новобранец";
 
     private RankImpl owner;
     private RankImpl recruit;
